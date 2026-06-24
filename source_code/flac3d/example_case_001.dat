@@ -1,0 +1,188 @@
+; FLAC3D parametric longwall trial model
+; Generated case: case_001
+; This is a 3D equivalent slice converted from the 2D layered block model.
+; Coordinates:
+;   x: section width, 0-172 m
+;   y: face/out-of-plane width, 0-20 m
+;   z: vertical coordinate, 0-100 m
+
+model new
+model configure mechanical
+model largestrain off
+model title 'FLAC3D longwall trial case case_001'
+
+; ------------------------------------------------------------
+; 1. Geometry and stratigraphy
+; ------------------------------------------------------------
+zone create brick point 0 (0,0,0)  point 1 (172,0,0) point 2 (0,20,0) point 3 (0,0,6)   size 86 8 3 group 'fenshayan1'
+zone create brick point 0 (0,0,6)  point 1 (172,0,6) point 2 (0,20,6) point 3 (0,0,9)   size 86 8 2 group 'niyan1'
+zone create brick point 0 (0,0,9)  point 1 (172,0,9) point 2 (0,20,9) point 3 (0,0,12.6144)  size 86 8 3 group '2mei'
+zone create brick point 0 (0,0,12.6144) point 1 (172,0,12.6144) point 2 (0,20,12.6144) point 3 (0,0,30) size 86 8 6 group 'shazhiniyan_roof'
+zone create brick point 0 (0,0,30) point 1 (172,0,30) point 2 (0,20,30) point 3 (0,0,38) size 86 8 4 group 'xilishayan'
+zone create brick point 0 (0,0,38) point 1 (172,0,38) point 2 (0,20,38) point 3 (0,0,50) size 86 8 5 group 'shazhiniyan2'
+zone create brick point 0 (0,0,50) point 1 (172,0,50) point 2 (0,20,50) point 3 (0,0,68) size 86 8 6 group 'zhonglishayan'
+zone create brick point 0 (0,0,68) point 1 (172,0,68) point 2 (0,20,68) point 3 (0,0,78) size 86 8 4 group 'shazhiniyan3'
+zone create brick point 0 (0,0,78) point 1 (172,0,78) point 2 (0,20,78) point 3 (0,0,88) size 86 8 4 group 'fenshayan2'
+zone create brick point 0 (0,0,88) point 1 (172,0,88) point 2 (0,20,88) point 3 (0,0,100) size 86 8 5 group 'shazhiniyan4'
+
+zone gridpoint merge
+zone face skin
+
+; ------------------------------------------------------------
+; 2. Constitutive models and material parameters
+;    Roof parameters are scaled by the generated case file.
+; ------------------------------------------------------------
+zone cmodel assign mohr-coulomb
+zone property density 2400 bulk 3.80e9 shear 3.50e9 cohesion 4.38e6 tension 4.40e6 friction 30 range group 'fenshayan1'
+zone property density 2200 bulk 1.85e9 shear 1.90e9 cohesion 2.36e6 tension 0.47e6 friction 28 range group 'niyan1'
+zone property density 1400 bulk 1.30e9 shear 0.90e9 cohesion 2.36e6 tension 0.41e6 friction 31 range group '2mei'
+zone property density 2500 bulk 7.58266e+09 shear 3.07843e+09 cohesion 6.21469e+06 tension 3.25637e+06 friction 27.4771 range group 'shazhiniyan_roof'
+zone property density 2200 bulk 1.89e9 shear 1.37e9 cohesion 1.36e6 tension 0.66e6 friction 27 range group 'xilishayan'
+zone property density 2500 bulk 13.20e9 shear 5.00e9 cohesion 5.65e6 tension 4.03e6 friction 35 range group 'shazhiniyan2'
+zone property density 2420 bulk 13.70e9 shear 6.16e9 cohesion 5.30e6 tension 3.50e6 friction 30 range group 'zhonglishayan'
+zone property density 2500 bulk 13.20e9 shear 5.00e9 cohesion 5.65e6 tension 4.03e6 friction 35 range group 'shazhiniyan3'
+zone property density 2400 bulk 3.80e9 shear 3.50e9 cohesion 4.38e6 tension 4.40e6 friction 30 range group 'fenshayan2'
+zone property density 2500 bulk 13.20e9 shear 5.00e9 cohesion 5.65e6 tension 4.03e6 friction 35 range group 'shazhiniyan4'
+
+; ------------------------------------------------------------
+; 3. Boundary conditions and initial stress
+; ------------------------------------------------------------
+model gravity 0 0 -10
+
+; Roller boundaries. The y-direction boundaries make this an equivalent
+; plane-strain slice while preserving FLAC3D data structures.
+zone face apply velocity-normal 0 range group 'Bottom'
+zone face apply velocity-normal 0 range group 'East'
+zone face apply velocity-normal 0 range group 'West'
+zone face apply velocity-normal 0 range group 'North'
+zone face apply velocity-normal 0 range group 'South'
+
+; Compression is negative in FLAC3D. The stress gradients are specified
+; so that stress magnitude decreases upward to q_top at z = 100 m.
+zone initialize stress-zz -2.05359e+07 grad 0 0 24000
+zone initialize stress-xx -1.87396e+07 grad 0 0 21900.8
+zone initialize stress-yy -1.87396e+07 grad 0 0 21900.8
+zone face apply stress-normal -1.81359e+07 range group 'Top'
+
+model solve ratio-local 1.0e-4 or cycles 50000
+model save 'init_case_001'
+
+; ------------------------------------------------------------
+; 4. Roadway excavation
+; ------------------------------------------------------------
+zone group 'roadway_left'  range group '2mei' position-x 30 36 position-z 9 12.6144
+zone group 'roadway_right' range group '2mei' position-x 136 142 position-z 9 12.6144
+zone delete range group 'roadway_left'
+zone delete range group 'roadway_right'
+zone face skin
+model solve ratio-local 1.0e-4 or cycles 30000
+model save 'roadway_case_001'
+
+; ------------------------------------------------------------
+; 5. Histories for quick trial checks
+; ------------------------------------------------------------
+zone history name 'roof_mid_u_z' displacement-z position (86,10,12.6144)
+zone history name 'abutment_stress_zz' stress-zz position (36,10,12)
+
+; ------------------------------------------------------------
+; 6. Stepwise longwall extraction
+;    After each extraction step, an equivalent support pressure is
+;    applied to the exposed roof underside of the current panel.
+;    Negative stress-normal gives upward support on the roof bottom
+;    face because the outward normal of the roof underside points down.
+; ------------------------------------------------------------
+zone group 'panel_01' range group '2mei' position-x 36 56 position-z 9 12.6144
+zone delete range group 'panel_01'
+zone face skin
+zone face apply stress-normal -1.32029e+06 range position-x 36 56 position-y 0 20 position-z 12.5644 12.6644
+model solve ratio-local 1.0e-4 or cycles 30000
+model save 'case_001_step01'
+
+zone group 'panel_02' range group '2mei' position-x 56 76 position-z 9 12.6144
+zone delete range group 'panel_02'
+zone face skin
+zone face apply stress-normal -1.32029e+06 range position-x 56 76 position-y 0 20 position-z 12.5644 12.6644
+model solve ratio-local 1.0e-4 or cycles 30000
+model save 'case_001_step02'
+
+zone group 'panel_03' range group '2mei' position-x 76 96 position-z 9 12.6144
+zone delete range group 'panel_03'
+zone face skin
+zone face apply stress-normal -1.32029e+06 range position-x 76 96 position-y 0 20 position-z 12.5644 12.6644
+model solve ratio-local 1.0e-4 or cycles 30000
+model save 'case_001_step03'
+
+zone group 'panel_04' range group '2mei' position-x 96 116 position-z 9 12.6144
+zone delete range group 'panel_04'
+zone face skin
+zone face apply stress-normal -1.32029e+06 range position-x 96 116 position-y 0 20 position-z 12.5644 12.6644
+model solve ratio-local 1.0e-4 or cycles 30000
+model save 'case_001_step04'
+
+zone group 'panel_05' range group '2mei' position-x 116 136 position-z 9 12.6144
+zone delete range group 'panel_05'
+zone face skin
+zone face apply stress-normal -1.32029e+06 range position-x 116 136 position-y 0 20 position-z 12.5644 12.6644
+model solve ratio-local 1.0e-4 or cycles 30000
+model save 'case_001_step05'
+
+; ------------------------------------------------------------
+; 7. Automatic numeric summary for batch post-processing
+;    The exported table is text-readable by the post-processing script.
+;    x = 1: minimum z displacement, m
+;    x = 2: maximum z displacement, m
+;    x = 3: peak compressive vertical stress near both coal walls, Pa
+;    x = 4: equivalent support pressure, Pa
+;    x = 5: top vertical load, Pa
+; ------------------------------------------------------------
+fish define summarize_case
+    local uz_min = 1.0e30
+    local uz_max = -1.0e30
+    loop foreach local g gp.list
+        local uz = gp.disp.z(g)
+        if uz < uz_min then
+            uz_min = uz
+        endif
+        if uz > uz_max then
+            uz_max = uz
+        endif
+    endloop
+
+    local szz_peak = 0.0
+    loop foreach local z zone.list
+        local x_pos = zone.pos.x(z)
+        local z_pos = zone.pos.z(z)
+        local in_left_abutment = 0
+        local in_right_abutment = 0
+        if x_pos >= 20.0 then
+            if x_pos <= 36.0 then
+                in_left_abutment = 1
+            endif
+        endif
+        if x_pos >= 136.0 then
+            if x_pos <= 152.0 then
+                in_right_abutment = 1
+            endif
+        endif
+        if z_pos >= 9.0 then
+            if z_pos <= 30.0 then
+                if in_left_abutment + in_right_abutment > 0 then
+                    local szz_comp = -zone.stress.zz(z)
+                    if szz_comp > szz_peak then
+                        szz_peak = szz_comp
+                    endif
+                endif
+            endif
+        endif
+    endloop
+
+    table('summary_case_001',1) = uz_min
+    table('summary_case_001',2) = uz_max
+    table('summary_case_001',3) = szz_peak
+    table('summary_case_001',4) = 1.32029e+06
+    table('summary_case_001',5) = 1.81359e+07
+end
+@summarize_case
+table 'summary_case_001' export 'summary_case_001.tab' truncate
+
+model save 'final_case_001'

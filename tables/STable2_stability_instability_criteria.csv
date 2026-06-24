@@ -1,0 +1,8 @@
+﻿step,criterion,operational_rule,meaning
+1,计算完成性,存在 summary_case.tab，且可读出 5 个汇总量,排除未运行、未收敛到输出阶段或无摘要文件的工况
+2,顶板最大下沉量有效,max_settlement_m 为有限值且 >= 0,排除异常符号或摘要读取异常的工况
+3,顶板下沉控制,max_settlement_m <= 2.0 m,认为该支护压力下顶板变形仍处于可控范围
+4,底鼓/上拱控制,max_heave_m <= 2.0 m,避免虽然顶板受控但底板上拱异常的工况被误判为稳定
+5,单工况可控判定,qc_flag == ok，则 meets_control = 1；否则 meets_control = 0,形成每个 FLAC3D 支护压力水平下的稳定/失稳二值结果
+6,所需支护压力标签,同一 geo_id 内，取最小的 meets_control = 1 的 support_pressure_MPa,得到 required_support_pressure_MPa 作为代理模型回归/分类标签
+7,不可控/边界样本,若 0.5-2.6 MPa 各级均 meets_control = 0，则标记为 >2.6 MPa,表示当前支护搜索范围内无法控制，作为失稳边界识别样本

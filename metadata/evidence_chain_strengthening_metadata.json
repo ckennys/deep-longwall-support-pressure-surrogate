@@ -1,0 +1,24 @@
+{
+  "features": [
+    "H_m",
+    "lambda",
+    "M_m",
+    "alpha_E_roof",
+    "alpha_c_roof",
+    "phi_roof_deg",
+    "alpha_t_roof"
+  ],
+  "pressure_levels_MPa": [
+    0.5,
+    0.8,
+    1.1,
+    1.4,
+    1.7,
+    2.0,
+    2.3,
+    2.6
+  ],
+  "repeated_cv": "5 folds x 5 repeats",
+  "single_stage_censored_boundary_rule": "predicted_pressure >= 2.45 MPa",
+  "field_scenario_envelope": "H 900-1100 m; lambda 0.8-1.2; M 5.0-5.985 m; roof factors around baseline."
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Boundary-aware surrogate modelling for rapid screening of minimum equivalent support pressure in deep longwall mining"
+message: "If you use this dataset or source code, please cite the associated manuscript and archived repository."
+type: dataset
+authors:
+  - family-names: "Author"
+    given-names: "First"
+repository-code: "https://github.com/USERNAME/deep-longwall-support-pressure-surrogate"
+abstract: "Anonymised FLAC3D-derived support-pressure labels, machine-learning evaluation tables, field-conversion summaries and source code for boundary-aware surrogate modelling in deep longwall mining."
+keywords:
+  - deep longwall mining
+  - FLAC3D
+  - surrogate model
+  - support pressure
+  - boundary-aware modelling
+  - machine learning
+license: MIT
+version: "v1.0.0"
+date-released: "2026-06-24"

@@ -1,0 +1,8 @@
+﻿task,model,train_size,boundary_recall_mean,boundary_recall_sd,roc_auc_mean,roc_auc_sd,mean_test_boundary_count
+boundary_classification,LogisticRegression,40,0.9333333333333333,0.1015138390753178,0.9431089743589743,0.02806714349822154,16.0
+boundary_classification,LogisticRegression,60,0.9897435897435898,0.03972290611494787,0.9809018567639257,0.012846836773043713,13.0
+boundary_classification,LogisticRegression,80,1.0,0.0,0.9836354852876592,0.006487919751260018,10.666666666666666
+boundary_classification,LogisticRegression,100,1.0,0.0,0.9820512820512821,0.011343165621273308,8.0
+boundary_classification,LogisticRegression,120,1.0,0.0,0.9866666666666667,0.014272102358577786,5.0
+boundary_classification,LogisticRegression,140,1.0,0.0,0.9856209150326797,0.029146013841459116,3.0
+boundary_classification,LogisticRegression,150,1.0,0.0,0.9925925925925926,0.028688765527462357,1.0

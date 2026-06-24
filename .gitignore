@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.f3sav
+*.sav
+*.log
+*.tmp
+*.bak
+*.zip
+raw_field_reports/
+private/
+local_paths.txt

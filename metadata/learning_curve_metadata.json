@@ -1,0 +1,16 @@
+{
+  "features": [
+    "H_m",
+    "lambda",
+    "M_m",
+    "q_top_MPa",
+    "alpha_E_roof",
+    "alpha_c_roof",
+    "phi_roof_deg",
+    "alpha_t_roof"
+  ],
+  "classification_model": "LogisticRegression",
+  "regression_model": "TabPFNRegressor",
+  "classification_repeats_per_size": 15,
+  "regression_repeats_per_size": 8
+}

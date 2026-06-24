@@ -1,0 +1,23 @@
+{
+  "title": "Boundary-aware surrogate modelling for rapid screening of minimum equivalent support pressure in deep longwall mining",
+  "upload_type": "dataset",
+  "description": "Anonymised FLAC3D-derived support-pressure labels, support-pressure search records, machine-learning evaluation tables, field-conversion summaries and source code for a boundary-aware surrogate modelling study in deep longwall mining.",
+  "creators": [
+    {
+      "name": "Author, First",
+      "affiliation": "Institution"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "deep longwall mining",
+    "FLAC3D",
+    "surrogate model",
+    "support pressure",
+    "machine learning",
+    "boundary-aware modelling"
+  ],
+  "access_right": "open",
+  "version": "v1.0.0",
+  "related_identifiers": []
+}

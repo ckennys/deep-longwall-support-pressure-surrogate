@@ -1,0 +1,4 @@
+item,n,lower_MPa,median_MPa,upper_MPa,max_MPa,exceedance_rate,note
+surrogate_field_envelope_controllable_predictions,2161,0.5,1.0772703886032104,2.563157081604004,2.6,0.01188843164151806,"Near-7306 scenario envelope: H=900-1100 m, lambda=0.8-1.2, M=5.0-5.985 m, roof factors around 1.0."
+field_equivalent_pressure_base_case,6,0.8161906300571017,0.9804722222222223,1.2968333333333333,1.2968333333333333,0.0,"ZY8000/23/47D, rated hydraulic pressure 40 MPa, control area 6.0 m2."
+field_equivalent_pressure_sensitivity_envelope,36,0.4651524680212816,1.0395357142857142,1.750725,1.750725,0.0,All current support-model and equivalent-control-area assumptions.

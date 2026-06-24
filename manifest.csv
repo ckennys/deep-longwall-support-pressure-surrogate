@@ -1,0 +1,27 @@
+file,category,description,contains_raw_field_data
+data/SData1_FLAC3D_160_parameter_combinations_and_labels.csv,data,FLAC3D parameter combinations with finite and boundary labels,no
+data/SData2_controllable_regression_labels_139.csv,data,Controllable cases used for finite-pressure regression,no
+data/SData3_boundary_labels_21.csv,data,Boundary cases labelled as >2.6 MPa,no
+data/SData4_support_pressure_search_records_1229.csv,data,FLAC3D support-pressure search records,no
+tables/STable1_parameter_space_design.csv,table,Parameter-space design and input ranges,no
+tables/STable2_stability_instability_criteria.csv,table,Stability and boundary-label criteria,no
+tables/STable3_candidate_model_metrics.csv,table,Candidate surrogate model metrics,no
+tables/STable4_repeated_stage1_classification_summary.csv,table,Repeated boundary-classification summary,no
+tables/STable5_repeated_stage2_regression_summary.csv,table,Repeated finite-pressure regression summary,no
+tables/STable6_learning_curve_regression_summary.csv,table,Regression learning-curve summary,no
+tables/STable7_learning_curve_classification_summary.csv,table,Boundary-classification learning-curve summary,no
+tables/STable8_stratified_error_by_pressure_level.csv,table,Support-pressure level stratified error summary,no
+tables/STable9_nearest_level_confusion_matrix.csv,table,Nearest pressure-level confusion matrix,no
+tables/STable10_field_support_statistics_anonymised.csv,table,Anonymised field support-column pressure statistics,no
+tables/STable11_field_surrogate_interval_validation.csv,table,Field-derived equivalent pressure and surrogate interval comparison,no
+tables/STable12_field_conversion_parameter_status.csv,table,Field conversion parameter status and uncertainty notes,no
+figures/Fig7_stratified_error_analysis.png,figure,Stratified error analysis figure,no
+figures/Learning_curve_surrogate_dataset.png,figure,Learning-curve figure,no
+figures/Original_error_distribution_optional.png,figure,Original optional error-distribution figure,no
+scripts/run_advanced_tabular_models.py,script,Candidate surrogate model evaluation script,no
+scripts/run_exceedance_classifier.py,script,Boundary-classification script,no
+scripts/run_learning_curve_evidence.py,script,Learning-curve analysis script,no
+scripts/make_stratified_error_analysis.py,script,Stratified error analysis script,no
+scripts/map_field_pressure_to_equiv_support.py,script,Field-pressure to equivalent-pressure conversion script,no
+metadata/learning_curve_metadata.json,metadata,Learning-curve feature list and split settings,no
+metadata/evidence_chain_strengthening_metadata.json,metadata,Pressure levels and validation settings,no
