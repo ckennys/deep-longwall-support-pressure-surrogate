@@ -41,7 +41,9 @@ Suggested reproduction order:
 
 ## Citation
 
-If this repository is used, please cite the associated manuscript and the archived Zenodo version once the DOI is assigned.
+If this repository is used, please cite the associated manuscript and the archived Zenodo version:
+
+https://doi.org/10.5281/zenodo.20839925
 
 ## License
 

@@ -41,4 +41,4 @@ After Zenodo generates the DOI, update the Data and code availability statement 
 
 Recommended statement:
 
-The anonymised FLAC3D-derived parameter tables, support-pressure labels, model-evaluation tables, learning-curve data, field pressure conversion summary, and source scripts are available at the GitHub repository and archived on Zenodo under DOI: TO_BE_ADDED.
+The anonymised FLAC3D-derived parameter tables, support-pressure labels, model-evaluation tables, learning-curve data, field pressure conversion summary, and source scripts are available at the GitHub repository and archived on Zenodo under DOI: 10.5281/zenodo.20839925.

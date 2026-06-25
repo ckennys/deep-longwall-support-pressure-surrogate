@@ -19,5 +19,11 @@
   ],
   "access_right": "open",
   "version": "v1.0.0",
-  "related_identifiers": []
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ckennys/deep-longwall-support-pressure-surrogate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
 }
