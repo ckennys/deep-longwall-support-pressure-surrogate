@@ -1,15 +1,18 @@
 {
   "version": "2.0.0",
-  "status": "prepared_awaiting_zenodo_publication",
+  "status": "published",
   "file": "longwall-surrogate-v2.0.0_20261108.zip",
   "bytes": 3048576124,
   "sha256": "b56acdc8f97d8e6e97a3813dab3b4a800ac34ce872946a6fcdb9b32c14dfb5e7",
   "payload_files": 175,
-  "zenodo_version_doi": null,
-  "zenodo_record_url": null,
-  "download_url": null,
+  "zenodo_version_doi": "10.5281/zenodo.24049496",
+  "zenodo_record_url": "https://zenodo.org/records/24049496",
+  "download_url": "https://zenodo.org/api/records/24049496/files/longwall-surrogate-v2.0.0_20261108.zip/content",
   "historical_version_doi": "10.5281/zenodo.20839925",
   "concept_doi": "10.5281/zenodo.20839924",
   "prepared_date": "2026-11-08",
-  "note": "The historical v1.0.0 DOI is not the current full artifact archive."
+  "note": "The version-specific DOI identifies the published complete v2.0.0 data, frozen model and code ZIP.",
+  "publication_date": "2026-11-08",
+  "verified_date": "2026-11-08",
+  "zenodo_md5": "c0ac51b24118d44014f5f9f203df31b3"
 }

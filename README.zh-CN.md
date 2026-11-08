@@ -1,6 +1,6 @@
 # 长壁开采支护评估多模块代理框架
 
-当前源码版本为 **2.0.0**，包括支护需求、位移场和正应力场三个独立模块。完整数据与模型ZIP已在本地整理并核验，新版Zenodo归档正在上传或等待发布。
+当前源码版本为 **2.0.0**，包括支护需求、位移场和正应力场三个独立模块。完整数据与模型ZIP已发布于Zenodo，版本DOI为[10.5281/zenodo.24049496](https://doi.org/10.5281/zenodo.24049496)，文件与本地已核验ZIP一致。
 
 | 模块 | 方法 | 输出 |
 |---|---|---|
@@ -19,7 +19,7 @@ python predict_fields.py --input examples/field_inputs_10.npz --output outputs/f
 python evaluate.py --output-dir outputs/evaluation
 ```
 
-完整ZIP文件名、SHA256与发布状态见[归档信息](metadata/archive.json)。如已解压，可将环境变量`LONGWALL_SURROGATE_ARTIFACTS`设置为含有`data`、`models`和`SHA256SUMS.txt`的归档目录。现有Zenodo DOI `10.5281/zenodo.20839925`标识旧版v1.0.0，当前三模块归档的版本DOI将在发布后更新。
+完整ZIP文件名、SHA256与发布状态见[归档信息](metadata/archive.json)。如已解压，可将环境变量`LONGWALL_SURROGATE_ARTIFACTS`设置为含有`data`、`models`和`SHA256SUMS.txt`的归档目录。现有Zenodo DOI `10.5281/zenodo.20839925`标识旧版v1.0.0，当前三模块归档的版本DOI为`10.5281/zenodo.24049496`。
 
 原有旧版材料已保存在`legacy/v1.0.0/`，旧标签与Release保留。当前接口仅输出两个位移与三个正应力分量。场模型采用数据驱动的系数学习，不含旧稿的力学残差训练路径。
 

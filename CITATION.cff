@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: Please cite the version-specific Zenodo data, frozen model and code archive.
+type: dataset
+title: Data, frozen models and code for a constraint-aware surrogate framework for support demand and
+  surrounding-rock mechanical fields in longwall mining
+authors:
+- family-names: Song
+  given-names: Sitong
+  orcid: https://orcid.org/0009-0004-2739-8423
+  affiliation: China University of Mining & Technology, Beijing
+version: 2.0.0
+date-released: '2026-11-08'
+doi: 10.5281/zenodo.24049496
+url: https://zenodo.org/records/24049496
+repository-code: https://github.com/ckennys/deep-longwall-support-pressure-surrogate
+license: CC-BY-4.0

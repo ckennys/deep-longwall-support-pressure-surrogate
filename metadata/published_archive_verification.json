@@ -1,0 +1,17 @@
+{
+  "verified_date": "2026-11-08",
+  "record_id": 24049496,
+  "doi": "10.5281/zenodo.24049496",
+  "concept_doi": "10.5281/zenodo.20839924",
+  "version": "2.0.0",
+  "publication_date": "2026-11-08",
+  "record_url": "https://zenodo.org/records/24049496",
+  "download_url": "https://zenodo.org/api/records/24049496/files/longwall-surrogate-v2.0.0_20261108.zip/content",
+  "file": "longwall-surrogate-v2.0.0_20261108.zip",
+  "bytes": 3048576124,
+  "md5": "c0ac51b24118d44014f5f9f203df31b3",
+  "local_file_matches_published_metadata": true,
+  "api_access_verified": true,
+  "download_head_http_status": 200,
+  "sha256": "b56acdc8f97d8e6e97a3813dab3b4a800ac34ce872946a6fcdb9b32c14dfb5e7"
+}

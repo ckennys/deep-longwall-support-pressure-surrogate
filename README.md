@@ -1,6 +1,6 @@
 # Constraint-aware multi-module surrogates for longwall support assessment
 
-This repository provides the code for predicting support demand, displacement fields and normal stress fields from parameterized FLAC3D simulations of layered coal-measure strata. The current source version is **2.0.0**. The complete data/model archive has been prepared and verified locally; **its new Zenodo version is awaiting publication**. [中文说明](README.zh-CN.md)
+This repository provides the code for predicting support demand, displacement fields and normal stress fields from parameterized FLAC3D simulations of layered coal-measure strata. The current source version is **2.0.0**. The complete data/model archive is published as **version 2.0.0 on Zenodo**: [10.5281/zenodo.24049496](https://doi.org/10.5281/zenodo.24049496). [中文说明](README.zh-CN.md)
 
 | Module | Frozen architecture | Output |
 |---|---|---|
@@ -17,9 +17,10 @@ GitHub contains source code, small examples, input/output contracts, environment
 * File: `longwall-surrogate-v2.0.0_20261108.zip`
 * Size: 3,048,576,124 bytes, approximately 3.05 GB
 * SHA256: `b56acdc8f97d8e6e97a3813dab3b4a800ac34ce872946a6fcdb9b32c14dfb5e7`
-* New-version DOI/download: **awaiting Zenodo publication**; see [archive metadata](metadata/archive.json).
+* Version-specific DOI: [10.5281/zenodo.24049496](https://doi.org/10.5281/zenodo.24049496)
+* [Download the complete ZIP](https://zenodo.org/api/records/24049496/files/longwall-surrogate-v2.0.0_20261108.zip/content); [record and metadata](https://zenodo.org/records/24049496).
 
-The existing [Zenodo v1.0.0 record](https://zenodo.org/records/20839925) contains the earlier support-only study. Its DOI identifies those historical files. The [project concept DOI](https://doi.org/10.5281/zenodo.20839924) links versions; a fixed new-version DOI will be added when the complete v2 archive is published.
+The existing [Zenodo v1.0.0 record](https://zenodo.org/records/20839925) contains the earlier support-only study. Its DOI identifies those historical files. The [project concept DOI](https://doi.org/10.5281/zenodo.20839924) links versions; the current fixed version DOI is [10.5281/zenodo.24049496](https://doi.org/10.5281/zenodo.24049496).
 
 The complete archive contains:
 
@@ -43,7 +44,7 @@ cd deep-longwall-support-pressure-surrogate
 python -m pip install -r requirements.txt
 ```
 
-After obtaining the complete ZIP, verify and install it under the ignored `artifacts/` directory:
+Download the [published complete ZIP](https://zenodo.org/api/records/24049496/files/longwall-surrogate-v2.0.0_20261108.zip/content), then verify and install it under the ignored `artifacts/` directory:
 
 ```bash
 python scripts/prepare_archive.py --archive /path/to/longwall-surrogate-v2.0.0_20261108.zip
@@ -86,6 +87,6 @@ The complete archive includes numerical source data for Figs. 5.1 to 5.7. Figure
 
 ## Citation and licences
 
-Use the specific published Zenodo version supporting the results being cited. The v2 archive DOI and actual creator metadata will be synchronized after publication. [Citation guidance](CITATION.md)
+Use the specific published Zenodo version supporting the results being cited. The current data/model archive is [10.5281/zenodo.24049496](https://doi.org/10.5281/zenodo.24049496), version 2.0.0, credited to Sitong Song as confirmed by the author. [Citation guidance](CITATION.md)
 
 Project source code is MIT. Project-generated data, metadata, result tables, figure source data and trained surrogate artifacts use CC BY 4.0; see [file-level licences](LICENSES.md). Third-party runtime libraries, TabPFN foundation weights and FLAC3D retain their own licences. Native solver reruns require a separately licensed FLAC3D installation. No commercial solver executable or native binary save file is redistributed.

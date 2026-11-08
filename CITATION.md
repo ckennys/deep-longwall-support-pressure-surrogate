@@ -1,15 +1,15 @@
 # Citation
 
-Please cite the actual creators, version 2.0.0 and the version-specific DOI displayed on the Zenodo record for these files. The new version DOI is assigned during the deposit workflow and is not fabricated in this offline package.
+Please cite the specific published data/model/code archive:
 
-Suggested dataset title:
+Song, S. (2026). *Data, frozen models and code for a constraint-aware surrogate framework for support demand and surrounding-rock mechanical fields in longwall mining* (Version 2.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24049496
 
-Data, frozen models and code for a constraint-aware surrogate framework for support demand and surrounding-rock mechanical fields in longwall mining
+For a numeric-reference journal:
 
-Code repository: https://github.com/ckennys/deep-longwall-support-pressure-surrogate
+[dataset] Song S. Data, frozen models and code for a constraint-aware surrogate framework for support demand and surrounding-rock mechanical fields in longwall mining. Zenodo; 2026. Version 2.0.0. https://doi.org/10.5281/zenodo.24049496.
 
-Historical version 1.0.0: https://doi.org/10.5281/zenodo.20839925
+The author confirmed the creator as **Song, Sitong**. ORCID: https://orcid.org/0009-0004-2739-8423 . Machine-readable citation metadata is in `CITATION.cff`.
 
-Project concept DOI: https://doi.org/10.5281/zenodo.20839924
+The published ZIP includes the archived inference and evaluation implementation. The maintained source repository is https://github.com/ckennys/deep-longwall-support-pressure-surrogate . Source code uses MIT; project-generated data and trained surrogate artifacts use CC BY 4.0, as described in `LICENSES.md`.
 
-The historical version DOI identifies the earlier support-only files. Use the specific new-version DOI for reproducible citation of the present archive after publication. Creator names should be taken from the finalized deposit metadata.
+Historical version 1.0.0: https://doi.org/10.5281/zenodo.20839925 . Project concept DOI: https://doi.org/10.5281/zenodo.20839924 . Use the fixed version DOI supporting the results being cited.

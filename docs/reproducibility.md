@@ -32,3 +32,7 @@ The complete archive maps numerical source files to Figs. 5.1 to 5.7. Figure 5.7
 The portable student training copy uses deposited caches and keeps the original objectives and optimization choices. Archived model/figure runners can reference their original workspace organization and optional helpers; they are retained for provenance. The verified public paths are the portable inference, evaluation, artifact import and frozen replay scripts.
 
 Commercial solver binaries and `.f3sav` states are excluded. Native re-simulation requires a separately licensed FLAC3D installation. Replaying the deposited predictions and evaluating against deposited reference fields does not call FLAC3D.
+
+## Published archive identity
+
+The complete archive is now published as version 2.0.0 at https://doi.org/10.5281/zenodo.24049496 . The published filename, 3,048,576,124-byte size and MD5 match the locally verified ZIP. A metadata synchronization does not retrain models or modify the deposited numerical data.
