@@ -1,6 +1,1 @@
-numpy
-pandas
-matplotlib
-scikit-learn
-catboost
-tabpfn
+-r requirements-inference.txt

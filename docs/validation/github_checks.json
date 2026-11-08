@@ -1,0 +1,13 @@
+{
+  "checked_date": "2026-11-08",
+  "scope": "Local source update validation; not a GitHub Actions run.",
+  "lightweight_contract_tests_passed": 5,
+  "artifact_import_payload_sha256_verified": 174,
+  "frozen_replay_checks_passed": 15,
+  "all_frozen_replay_checks_passed": true,
+  "custom_support_example_rows_verified": 8,
+  "full_model_weights_tracked_in_git": false,
+  "new_zenodo_version_published": false,
+  "model_retraining_performed": false,
+  "native_solver_runs": 0
+}

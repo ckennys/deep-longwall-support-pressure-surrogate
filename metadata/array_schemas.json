@@ -1,0 +1,472 @@
+[
+  {
+    "file": "data/field_development/development_inputs.npz",
+    "arrays": {
+      "features": {
+        "shape": [
+          2970,
+          14
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "physical_group": {
+        "shape": [
+          2970
+        ],
+        "dtype": "<U29",
+        "fortran_order": false
+      },
+      "role": {
+        "shape": [
+          2970
+        ],
+        "dtype": "<U7",
+        "fortran_order": false
+      },
+      "feature_names": {
+        "shape": [
+          14
+        ],
+        "dtype": "<U28",
+        "fortran_order": false
+      },
+      "amplitude_uz": {
+        "shape": [
+          2970
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "case_id": {
+        "shape": [
+          2970
+        ],
+        "dtype": "<U12",
+        "fortran_order": false
+      },
+      "source": {
+        "shape": [
+          2970
+        ],
+        "dtype": "<U28",
+        "fortran_order": false
+      },
+      "step_index": {
+        "shape": [
+          2970
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      }
+    }
+  },
+  {
+    "file": "data/field_development/development_valid.npy",
+    "arrays": {
+      "shape": [
+        2970,
+        5504
+      ],
+      "dtype": "bool"
+    }
+  },
+  {
+    "file": "data/field_development/development_ux_m.npy",
+    "arrays": {
+      "shape": [
+        2970,
+        5504
+      ],
+      "dtype": "float32"
+    }
+  },
+  {
+    "file": "data/field_development/development_uz_m.npy",
+    "arrays": {
+      "shape": [
+        2970,
+        5504
+      ],
+      "dtype": "float32"
+    }
+  },
+  {
+    "file": "data/field_development/development_sxx_MPa.npy",
+    "arrays": {
+      "shape": [
+        2970,
+        5504
+      ],
+      "dtype": "float32"
+    }
+  },
+  {
+    "file": "data/field_development/development_syy_MPa.npy",
+    "arrays": {
+      "shape": [
+        2970,
+        5504
+      ],
+      "dtype": "float32"
+    }
+  },
+  {
+    "file": "data/field_development/development_szz_MPa.npy",
+    "arrays": {
+      "shape": [
+        2970,
+        5504
+      ],
+      "dtype": "float32"
+    }
+  },
+  {
+    "file": "data/guard_reference/references_265.npz",
+    "arrays": {
+      "uz": {
+        "shape": [
+          265,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "ux": {
+        "shape": [
+          265,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "features": {
+        "shape": [
+          265,
+          14
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "valid_mask": {
+        "shape": [
+          265,
+          5504
+        ],
+        "dtype": "bool",
+        "fortran_order": false
+      },
+      "case_id": {
+        "shape": [
+          265
+        ],
+        "dtype": "<U12",
+        "fortran_order": false
+      },
+      "physical_group": {
+        "shape": [
+          265
+        ],
+        "dtype": "<U4",
+        "fortran_order": false
+      },
+      "step": {
+        "shape": [
+          265
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      },
+      "snapshot_index": {
+        "shape": [
+          265
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "feature_names": {
+        "shape": [
+          14
+        ],
+        "dtype": "<U28",
+        "fortran_order": false
+      }
+    }
+  },
+  {
+    "file": "data/new_case_evaluation/inputs_50.npz",
+    "arrays": {
+      "features": {
+        "shape": [
+          50,
+          14
+        ],
+        "dtype": "float64",
+        "fortran_order": true
+      },
+      "valid_mask": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "bool",
+        "fortran_order": false
+      },
+      "case_id": {
+        "shape": [
+          50
+        ],
+        "dtype": "<U12",
+        "fortran_order": false
+      },
+      "physical_group": {
+        "shape": [
+          50
+        ],
+        "dtype": "<U8",
+        "fortran_order": false
+      },
+      "step": {
+        "shape": [
+          50
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      },
+      "feature_names": {
+        "shape": [
+          14
+        ],
+        "dtype": "<U28",
+        "fortran_order": false
+      }
+    }
+  },
+  {
+    "file": "data/new_case_evaluation/displacement_predictions_before_native.npz",
+    "arrays": {
+      "features": {
+        "shape": [
+          50,
+          14
+        ],
+        "dtype": "float64",
+        "fortran_order": true
+      },
+      "valid_mask": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "bool",
+        "fortran_order": false
+      },
+      "case_id": {
+        "shape": [
+          50
+        ],
+        "dtype": "<U12",
+        "fortran_order": false
+      },
+      "physical_group": {
+        "shape": [
+          50
+        ],
+        "dtype": "<U8",
+        "fortran_order": false
+      },
+      "step": {
+        "shape": [
+          50
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      },
+      "uz_repaired_m": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "uz_archived_m": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "ux_repaired_m": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "ux_archived_m": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      }
+    }
+  },
+  {
+    "file": "data/new_case_evaluation/displacement_references.npz",
+    "arrays": {
+      "uz_reference_m": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "ux_reference_m": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "valid_mask": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "bool",
+        "fortran_order": false
+      },
+      "case_id": {
+        "shape": [
+          50
+        ],
+        "dtype": "<U12",
+        "fortran_order": false
+      },
+      "step": {
+        "shape": [
+          50
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      }
+    }
+  },
+  {
+    "file": "data/new_case_evaluation/supplementary_stress_predictions_50.npz",
+    "arrays": {
+      "sxx_MPa": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "syy_MPa": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "szz_MPa": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "features": {
+        "shape": [
+          50,
+          14
+        ],
+        "dtype": "float64",
+        "fortran_order": true
+      },
+      "valid_mask": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "bool",
+        "fortran_order": false
+      },
+      "case_id": {
+        "shape": [
+          50
+        ],
+        "dtype": "<U12",
+        "fortran_order": false
+      },
+      "step": {
+        "shape": [
+          50
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      }
+    }
+  },
+  {
+    "file": "data/new_case_evaluation/supplementary_stress_references_50.npz",
+    "arrays": {
+      "sxx_MPa": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "syy_MPa": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "szz_MPa": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "valid_mask": {
+        "shape": [
+          50,
+          5504
+        ],
+        "dtype": "bool",
+        "fortran_order": false
+      },
+      "case_id": {
+        "shape": [
+          50
+        ],
+        "dtype": "<U12",
+        "fortran_order": false
+      },
+      "step": {
+        "shape": [
+          50
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      }
+    }
+  }
+]

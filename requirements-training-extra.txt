@@ -1,0 +1,4 @@
+-r requirements-inference.txt
+matplotlib==3.10.0
+seaborn==0.13.2
+# Historical teacher generation requires a separately licensed, compatible TabPFN setup.

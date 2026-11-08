@@ -1,0 +1,20 @@
+{
+  "recorded_date": "2026-11-08",
+  "role": "Current local replay environment; historical training versions are not inferred from it.",
+  "python": "3.13.5",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "numpy": "2.1.3",
+    "scipy": "1.15.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.4.2",
+    "torch": "2.10.0",
+    "catboost": "1.2.10",
+    "threadpoolctl": "3.5.0"
+  },
+  "tabpfn_installed_version_at_packaging": "8.0.3",
+  "tabpfn_required_for_cached_replay": false,
+  "torch_and_blas_thread_limit": 2,
+  "tree_parallelism": "Serialized estimator n_jobs settings are retained."
+}

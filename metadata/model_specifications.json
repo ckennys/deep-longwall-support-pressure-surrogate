@@ -1,0 +1,675 @@
+{
+  "test_environment": {
+    "python": "3.13.5",
+    "packages": {
+      "numpy": "2.1.3",
+      "scipy": "1.15.3",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.4.2",
+      "torch": "2.10.0",
+      "catboost": "1.2.10",
+      "threadpoolctl": "3.5.0"
+    }
+  },
+  "ux": {
+    "bundle_keys": [
+      "target",
+      "feature_names",
+      "archived_head",
+      "step5_guard",
+      "grid_shape",
+      "routing",
+      "selected_variant",
+      "development_physical_groups",
+      "protocol_sha256",
+      "pretest_amendment_sha256",
+      "reference_dataset_sha256"
+    ],
+    "head_keys": [
+      "config",
+      "pca",
+      "modes",
+      "scale",
+      "regressor"
+    ],
+    "config": {
+      "name": "Sqrt_Neural64",
+      "kind": "power",
+      "power": 0.5,
+      "learner": "nn",
+      "modes": 64,
+      "epochs": 360,
+      "members": 2
+    },
+    "regressor_keys": [
+      "kind",
+      "states",
+      "scaler",
+      "scale",
+      "inputs",
+      "outputs"
+    ],
+    "input_dimension": 53,
+    "output_dimension": 64,
+    "members": 2,
+    "guard_active_modes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "guard_keys": [
+      "lower",
+      "upper",
+      "active_modes",
+      "margin",
+      "fit_reference_coefficients_only"
+    ]
+  },
+  "uz": {
+    "bundle_keys": [
+      "target",
+      "feature_names",
+      "archived_head",
+      "step5_guard",
+      "grid_shape",
+      "routing",
+      "selected_variant",
+      "development_physical_groups",
+      "protocol_sha256",
+      "pretest_amendment_sha256",
+      "reference_dataset_sha256"
+    ],
+    "head_keys": [
+      "config",
+      "pca",
+      "modes",
+      "scale",
+      "regressor"
+    ],
+    "config": {
+      "name": "Sqrt_Neural64",
+      "kind": "power",
+      "power": 0.5,
+      "learner": "nn",
+      "modes": 64,
+      "epochs": 360,
+      "members": 2
+    },
+    "regressor_keys": [
+      "kind",
+      "states",
+      "scaler",
+      "scale",
+      "inputs",
+      "outputs"
+    ],
+    "input_dimension": 53,
+    "output_dimension": 64,
+    "members": 2,
+    "guard_active_modes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "guard_keys": [
+      "lower",
+      "upper",
+      "active_modes",
+      "margin",
+      "fit_reference_coefficients_only"
+    ]
+  },
+  "sxx_MPa": {
+    "bundle_keys": [
+      "target",
+      "models",
+      "rule",
+      "configs",
+      "feature_names",
+      "training_groups",
+      "selection",
+      "flac3d_runs"
+    ],
+    "rule": {
+      "name": "Convex_by_step",
+      "mode": "step",
+      "weights": {
+        "1": [
+          0.14951266834175003,
+          0.24012288286833866,
+          0.2224676874640538,
+          0.38789676132585754,
+          0.0
+        ],
+        "2": [
+          0.5007250204179262,
+          0.2534916180599753,
+          0.19215795001032387,
+          0.053625411511774725,
+          0.0
+        ],
+        "3": [
+          0.1348894127561464,
+          0.8651105872438537,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "4": [
+          0.34264967170841565,
+          0.3606149848644141,
+          0.0,
+          0.29673534342717034,
+          0.0
+        ],
+        "5": [
+          0.4161783165719437,
+          0.0,
+          0.0,
+          0.0,
+          0.5838216834280563
+        ]
+      }
+    },
+    "members": [
+      {
+        "wrapper": null,
+        "config": {
+          "name": "CatBoost_raw_depth5",
+          "representation": "raw",
+          "learner": "cat",
+          "modes": 24,
+          "depth": 5,
+          "iterations": 500
+        },
+        "retained": 24,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "CatBoost_raw_depth7",
+          "representation": "raw",
+          "learner": "cat",
+          "modes": 24,
+          "depth": 7,
+          "iterations": 600
+        },
+        "retained": 24,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_raw_k64_leaf4",
+          "representation": "raw",
+          "learner": "et",
+          "modes": 64,
+          "leaf": 4,
+          "features": 1.0
+        },
+        "retained": 64,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_raw_k96_leaf2",
+          "representation": "raw",
+          "learner": "et",
+          "modes": 96,
+          "leaf": 2,
+          "features": 0.7
+        },
+        "retained": 96,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_reference_variance",
+          "representation": "raw",
+          "learner": "et",
+          "modes": "variance",
+          "engineered": false,
+          "weighted": true
+        },
+        "retained": 96,
+        "children": []
+      }
+    ]
+  },
+  "syy_MPa": {
+    "bundle_keys": [
+      "target",
+      "models",
+      "rule",
+      "configs",
+      "feature_names",
+      "training_groups",
+      "selection",
+      "flac3d_runs"
+    ],
+    "rule": {
+      "name": "Convex_by_step",
+      "mode": "step",
+      "weights": {
+        "1": [
+          0.18444447218511398,
+          0.20279527362528066,
+          0.6127602541896054,
+          0.0,
+          0.0
+        ],
+        "2": [
+          0.33045080129937004,
+          0.15011516487287566,
+          0.5194340338277544,
+          0.0,
+          0.0
+        ],
+        "3": [
+          0.5102408803571378,
+          0.2500269177142062,
+          0.23973220192865607,
+          0.0,
+          0.0
+        ],
+        "4": [
+          0.6294620801655496,
+          0.10739680586574323,
+          0.26314111396870715,
+          0.0,
+          0.0
+        ],
+        "5": [
+          0.1707664793082069,
+          0.4534262736997592,
+          0.0,
+          0.029333191473027855,
+          0.3464740555190061
+        ]
+      }
+    },
+    "members": [
+      {
+        "wrapper": null,
+        "config": {
+          "name": "CatBoost_raw_depth7",
+          "representation": "raw",
+          "learner": "cat",
+          "modes": 24,
+          "depth": 7,
+          "iterations": 600
+        },
+        "retained": 24,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "CatBoost_raw_depth5",
+          "representation": "raw",
+          "learner": "cat",
+          "modes": 24,
+          "depth": 5,
+          "iterations": 500
+        },
+        "retained": 24,
+        "children": []
+      },
+      {
+        "wrapper": "step",
+        "config": {
+          "name": "ET_raw_step_experts",
+          "representation": "raw",
+          "learner": "et",
+          "modes": 32,
+          "leaf": 1,
+          "wrapper": "step"
+        },
+        "retained": null,
+        "children": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_raw_k96_leaf2",
+          "representation": "raw",
+          "learner": "et",
+          "modes": 96,
+          "leaf": 2,
+          "features": 0.7
+        },
+        "retained": 96,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_reference_variance",
+          "representation": "raw",
+          "learner": "et",
+          "modes": "variance",
+          "engineered": false,
+          "weighted": true
+        },
+        "retained": 96,
+        "children": []
+      }
+    ]
+  },
+  "szz_MPa": {
+    "bundle_keys": [
+      "target",
+      "models",
+      "rule",
+      "configs",
+      "feature_names",
+      "training_groups",
+      "selection",
+      "flac3d_runs"
+    ],
+    "rule": {
+      "name": "Convex_by_step",
+      "mode": "step",
+      "weights": {
+        "1": [
+          0.0,
+          0.28831901096870605,
+          0.0,
+          0.7116809890312941
+        ],
+        "2": [
+          0.0,
+          0.19475972323603966,
+          0.22900504317793624,
+          0.5762352335860242
+        ],
+        "3": [
+          0.2745555157480415,
+          0.0,
+          0.18380787236108986,
+          0.5416366118908688
+        ],
+        "4": [
+          0.5761371497423887,
+          0.0,
+          0.08543196958450233,
+          0.33843088067310906
+        ],
+        "5": [
+          0.0,
+          0.6241313390551643,
+          0.3758686609448357,
+          0.0
+        ]
+      }
+    },
+    "members": [
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_raw_k96_leaf2",
+          "representation": "raw",
+          "learner": "et",
+          "modes": 96,
+          "leaf": 2,
+          "features": 0.7
+        },
+        "retained": 96,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_reference_variance",
+          "representation": "raw",
+          "learner": "et",
+          "modes": "variance",
+          "engineered": false,
+          "weighted": true
+        },
+        "retained": 96,
+        "children": []
+      },
+      {
+        "wrapper": null,
+        "config": {
+          "name": "ET_raw_k64_leaf4",
+          "representation": "raw",
+          "learner": "et",
+          "modes": 64,
+          "leaf": 4,
+          "features": 1.0
+        },
+        "retained": 64,
+        "children": []
+      },
+      {
+        "wrapper": "step",
+        "config": {
+          "name": "ET_raw_step_experts",
+          "representation": "raw",
+          "learner": "et",
+          "modes": 32,
+          "leaf": 1,
+          "wrapper": "step"
+        },
+        "retained": null,
+        "children": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    ]
+  },
+  "support_checkpoint": {
+    "keys": [
+      "variant",
+      "fold",
+      "features",
+      "model_state",
+      "scaler_mean",
+      "scaler_scale",
+      "best_epoch"
+    ],
+    "variant": {
+      "name": "full_CMCRNet",
+      "use_censor": true,
+      "use_coupling": true,
+      "use_ranking": true,
+      "use_monotonic": true,
+      "censor_weight": 2.0,
+      "coupling_weight": 0.35,
+      "ranking_weight": 0.12,
+      "monotonic_weight": 2.0
+    },
+    "features": [
+      "H_m",
+      "lambda",
+      "M_m",
+      "q_top_MPa",
+      "alpha_E_roof",
+      "alpha_c_roof",
+      "phi_roof_deg",
+      "alpha_t_roof"
+    ],
+    "state_shapes": {
+      "link_scale_raw": [],
+      "encoder.0.weight": [
+        64,
+        8
+      ],
+      "encoder.0.bias": [
+        64
+      ],
+      "encoder.2.weight": [
+        64
+      ],
+      "encoder.2.bias": [
+        64
+      ],
+      "encoder.3.weight": [
+        64,
+        64
+      ],
+      "encoder.3.bias": [
+        64
+      ],
+      "encoder.5.weight": [
+        32,
+        64
+      ],
+      "encoder.5.bias": [
+        32
+      ],
+      "demand_head.weight": [
+        1,
+        32
+      ],
+      "demand_head.bias": [
+        1
+      ],
+      "risk_residual_head.weight": [
+        1,
+        32
+      ],
+      "risk_residual_head.bias": [
+        1
+      ]
+    }
+  }
+}

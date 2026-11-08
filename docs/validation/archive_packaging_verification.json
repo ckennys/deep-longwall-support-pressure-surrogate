@@ -1,0 +1,151 @@
+{
+  "archive": "longwall-surrogate-v2.0.0_20261108.zip",
+  "version": "2.0.0",
+  "sha256": "b56acdc8f97d8e6e97a3813dab3b4a800ac34ce872946a6fcdb9b32c14dfb5e7",
+  "bytes": 3048576124,
+  "payload_files": 175,
+  "uncompressed_bytes": 3118338482,
+  "compression_seconds": 68.16,
+  "remote_upload_performed": false,
+  "zip_crc_checked_on_extraction": true,
+  "payload_sha256_files_verified": 174,
+  "all_archive_members_safe": true,
+  "roundtrip_field_cli_snapshots": 10,
+  "roundtrip_field_max_absolute_difference": {
+    "ux_m": 2.2351741790771484e-07,
+    "uz_m": 4.172325134277344e-07,
+    "sxx_MPa": 0.0,
+    "syy_MPa": 0.0,
+    "szz_MPa": 0.0
+  },
+  "roundtrip_support_cli_rows": 64,
+  "support_classifications_match": true,
+  "no_pass_finite_output_undefined": true,
+  "lower_pressure_tie_breaking_verified": true,
+  "full_frozen_replay": {
+    "scope": "Frozen inference replay; no model retraining or native solver runs.",
+    "environment": {
+      "python": "3.13.5",
+      "packages": {
+        "numpy": "2.1.3",
+        "scipy": "1.15.3",
+        "pandas": "2.2.3",
+        "scikit-learn": "1.7.2",
+        "joblib": "1.4.2",
+        "torch": "2.10.0",
+        "catboost": "1.2.10",
+        "threadpoolctl": "3.5.0"
+      }
+    },
+    "checks": [
+      {
+        "component": "ux_m",
+        "snapshots": 50,
+        "max_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "component": "uz_m",
+        "snapshots": 50,
+        "max_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "component": "sxx_MPa",
+        "snapshots": 50,
+        "max_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "component": "syy_MPa",
+        "snapshots": 50,
+        "max_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "component": "szz_MPa",
+        "snapshots": 50,
+        "max_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "component": "ux_m",
+        "diagnostic": "unguarded predictions and unchanged steps 1 to 4",
+        "max_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "component": "uz_m",
+        "diagnostic": "unguarded predictions and unchanged steps 1 to 4",
+        "max_absolute_difference": 0.0,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "development",
+        "variant": "independent_multitask",
+        "rows": 960,
+        "max_demand_difference_MPa": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "development",
+        "variant": "plus_censored_loss",
+        "rows": 960,
+        "max_demand_difference_MPa": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "development",
+        "variant": "plus_coupled_ranking",
+        "rows": 960,
+        "max_demand_difference_MPa": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "development",
+        "variant": "full_CMCRNet",
+        "rows": 960,
+        "max_demand_difference_MPa": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "archived",
+        "variant": "independent_multitask",
+        "rows": 64,
+        "max_demand_difference_MPa": 2.384185793236071e-07,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "archived",
+        "variant": "plus_censored_loss",
+        "rows": 64,
+        "max_demand_difference_MPa": 5.960464477539063e-08,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "archived",
+        "variant": "plus_coupled_ranking",
+        "rows": 64,
+        "max_demand_difference_MPa": 4.440892098500626e-16,
+        "passed": true
+      },
+      {
+        "module": "support",
+        "dataset": "archived",
+        "variant": "full_CMCRNet",
+        "rows": 64,
+        "max_demand_difference_MPa": 2.384185791015625e-07,
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  },
+  "upload_package_ready": true
+}

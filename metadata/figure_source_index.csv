@@ -1,0 +1,8 @@
+figure,source_directory,scope,display_variant
+5.1,figure_source_data/fig5_1,qualified new-case field evaluation,compact
+5.2,figure_source_data/fig5_2,qualified new-case field evaluation,compact without displayed mesh
+5.3,figure_source_data/fig5_3,qualified new-case field evaluation,compact without displayed mesh
+5.4,figure_source_data/fig5_4,qualified new-case field evaluation,compact without displayed mesh
+5.5,figure_source_data/fig5_5,support task predictions and constraints,compact
+5.6,figure_source_data/fig5_6,support task predictions and constraints,compact
+5.7,figure_source_data/fig5_7,held-group development diagnostic; g012 / 2.3 MPa / step 5,compact

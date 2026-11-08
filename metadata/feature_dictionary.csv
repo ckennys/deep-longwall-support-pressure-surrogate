@@ -1,0 +1,15 @@
+field_column_0_based,feature,unit,support_input
+0,H_m,m,True
+1,lambda,1,True
+2,M_m,m,True
+3,q_top_MPa,MPa,True
+4,alpha_E_roof,1,True
+5,alpha_c_roof,1,True
+6,phi_roof_deg,degree,True
+7,alpha_t_roof,1,True
+8,support_pressure_MPa,MPa,False
+9,panel_span_m,m,False
+10,roadway_width_m,m,False
+11,slice_width_m,m,False
+12,direct_roof_thickness_factor,1,False
+13,step_fraction,1,False
